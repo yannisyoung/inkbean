@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkbean - Claude Code 서브에이전트가 일하는 모습을 픽셀 텃밭에서</title>
+<meta name="description" content="Inkbean은 Claude Code 플러그인입니다. 메인 에이전트와 모든 서브에이전트가 터미널 옆 픽셀 텃밭 창에서 콩이 되어 일합니다. 각자 무엇을 하는지, 멈춘 것 같은지, 무엇을 했는지 보입니다. 모두 끝나면 알림 한 번. 읽기 전용, 네트워크 없음.">
+<meta property="og:title" content="Inkbean - Claude Code 에이전트가 픽셀 텃밭을 가꿉니다">
+<meta property="og:description" content="각 에이전트가 무엇을 하는지, 멈춘 것 같은지, 무엇을 했는지. 읽기 전용, 네트워크 없음.">
+<meta property="og:image" content="https://yannisyoung.github.io/inkbean/assets/cover_1280x720.png">
+<meta property="og:url" content="https://yannisyoung.github.io/inkbean/ko/">
+<link rel="canonical" href="https://yannisyoung.github.io/inkbean/ko/">
+<link rel="alternate" hreflang="en" href="https://yannisyoung.github.io/inkbean/">
+<link rel="alternate" hreflang="ja" href="https://yannisyoung.github.io/inkbean/ja/">
+<link rel="alternate" hreflang="es" href="https://yannisyoung.github.io/inkbean/es/">
+<link rel="alternate" hreflang="ko" href="https://yannisyoung.github.io/inkbean/ko/">
+<link rel="alternate" hreflang="zh-Hans" href="https://yannisyoung.github.io/inkbean/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://yannisyoung.github.io/inkbean/zh-tw/">
+<link rel="alternate" hreflang="de" href="https://yannisyoung.github.io/inkbean/de/">
+<link rel="alternate" hreflang="fr" href="https://yannisyoung.github.io/inkbean/fr/">
+<link rel="alternate" hreflang="pt-BR" href="https://yannisyoung.github.io/inkbean/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://yannisyoung.github.io/inkbean/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Inkbean", "applicationCategory": "DeveloperApplication", "operatingSystem": "macOS", "inLanguage": "ko", "description": "메인 에이전트와 모든 서브에이전트를 픽셀 텃밭의 콩으로 보여 주는 Claude Code 플러그인.", "url": "https://yannisyoung.github.io/inkbean/ko/", "image": "https://yannisyoung.github.io/inkbean/assets/cover_1280x720.png", "offers": {"@type": "Offer", "price": "7.00", "priceCurrency": "USD", "url": "https://yannisyoung.gumroad.com/l/sztoul", "availability": "https://schema.org/InStock"}, "author": {"@type": "Person", "name": "Yannis Young"}}</script>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><details class="langs"><summary class="lang sign">한국어</summary><ul><li><a href="../" hreflang="en" lang="en">English</a></li><li><a href="../ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></li><li><a href="../zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../zh-tw/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a></li></ul></details></header>
+
+  <main>
+    <div class="hero">
+      <div class="stand">
+      <div class="board sign">
+        <h1>에이전트가 텃밭을 가꿉니다.</h1>
+        <p>Claude Code 플러그인 Inkbean</p>
+      </div>
+        <span class="posts" aria-hidden="true"></span>
+      </div>
+
+      <div class="plot">
+        <picture>
+          <source srcset="../assets/cover_1280x720.png" media="(prefers-reduced-motion: reduce)">
+          <img src="../assets/demo.gif" width="576" height="324" alt="밀짚모자를 쓴 콩이 된 두 개의 Claude Code 세션. 서브에이전트는 씨앗에서 싹을 틔워 밭에서 일하고, 끝나면 작물이 꽃을 피웁니다.">
+        </picture>
+      </div>
+      <p class="caption">Claude Code 세션 두 개를 실행하는 동안 실제 창을 녹화했습니다. 네 장면을 실제 속도로 이었습니다.</p>
+    </div>
+
+    <div class="buy">
+      <a href="https://yannisyoung.gumroad.com/l/sztoul">Inkbean 구매하기, 7달러</a>
+      <small>Gumroad에서 한 번 결제. 업데이트는 무료입니다.</small>
+    </div>
+  </main>
+</div>
+
+<div class="soil">
+  <div class="wrap rows">
+    <div class="sign">
+      <h3>누가 무엇을 하는지</h3>
+      <p>콩마다 일에 맞는 도구를 듭니다. 읽을 때는 책, 쓸 때는 물뿌리개, 명령을 실행할 때는 괭이. 일하는 동안 작물이 자랍니다.</p>
+    </div>
+    <div class="sign">
+      <h3>끝나면 알림 한 번</h3>
+      <p>모든 작업이 끝나면 개수와 시간만 담은 데스크톱 알림을 한 번 보냅니다. 에이전트마다 울리지 않습니다.</p>
+    </div>
+    <div class="sign">
+      <h3>멈춘 에이전트를 알려요</h3>
+      <p>5분 동안 움직임이 없거나, 같은 호출을 6번 반복하거나, 다른 에이전트와 같은 파일을 편집하면 한 번 알려 줍니다.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="notes">
+    <h2>메인 에이전트도 텃밭에</h2>
+    <p>밀짚모자를 쓴 콩은 당신이 대화하는 에이전트로, 세션마다 하나씩 있습니다. Claude Code가 생각을 시작할 때까지 나무 그늘에서 낮잠을 자고, 생각하는 동안에는 잡초를 뽑고, 도구를 한 번 쓸 때마다 채소를 하나 수확해 수레에 싣습니다. 콩을 클릭하면 읽은 파일, 편집한 파일, 실행한 명령, 오류, 토큰, 시간, 모델 이름을 볼 수 있습니다.</p>
+
+    <h2>읽기 전용, 개인정보 보호</h2>
+    <ul>
+      <li>도구 호출이나 에이전트를 막거나 바꾸지 않습니다. 지켜보기만 합니다.</li>
+      <li>네트워크를 쓰지 않습니다. 텃밭 페이지는 모든 네트워크 접근을 막고, 플러그인도 웹 요청을 하지 않습니다.</li>
+      <li>한 폴더에만 쓰며, 프롬프트, 답변, 명령, 파일 내용은 저장하지 않습니다.</li>
+      <li>소스는 읽을 수 있는 형태로 들어 있고, 자동 테스트가 138개 있습니다.</li>
+    </ul>
+
+    <h2>구매 전에</h2>
+    <ul>
+      <li>Claude Code 2.1.302 이상과 최신 브라우저가 필요합니다.</li>
+      <li>macOS의 Chrome과 Safari에서 테스트했습니다(2026년 10월). Windows와 Linux는 아직 테스트하지 않았습니다.</li>
+      <li>텃밭 창과 README는 영어입니다.</li>
+      <li>Claude Code의 플러그인 훅(얼리 액세스 기능)을 사용하므로 Claude Code 업데이트로 동작이 바뀔 수 있습니다. 그런 경우 수정에 나서겠습니다.</li>
+      <li>판매 페이지(Gumroad)는 영어이며 가격은 미국 달러입니다.</li>
+    </ul>
+  </section>
+
+  <aside class="ad-slot" hidden aria-label="광고"></aside>
+
+  <div class="buy">
+    <a href="https://yannisyoung.gumroad.com/l/sztoul">Inkbean 구매하기, 7달러</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>비공식 플러그인입니다. Anthropic과 관련이 없으며 승인을 받지 않았습니다. "Claude"와 "Claude Code"는 Anthropic, PBC의 상표이며, 무엇과 함께 동작하는지 알리기 위해서만 사용합니다.</p>
+    <p>판매: Yannis Young, Gumroad를 통해 판매합니다. 판매자 정보, 환불, 지원은 <a href="https://yannisyoung.gumroad.com/l/sztoul">상품 페이지</a>에 있습니다. 연락처: yannisyoung0987@gmail.com</p>
+    <p><a href="../privacy.html" hreflang="en">개인정보 처리방침(영어)</a></p>
+  </div>
+</footer>
+</body>
+</html>

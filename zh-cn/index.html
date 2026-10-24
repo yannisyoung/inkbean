@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkbean - 在像素菜园里看 Claude Code 子代理工作</title>
+<meta name="description" content="Inkbean 是一款 Claude Code 插件。主代理和每个子代理都会变成豆子，在终端旁的像素菜园窗口里干活：每个代理在做什么、是否卡住、做了什么，一目了然。全部完成时只通知一次。只读，不联网。">
+<meta property="og:title" content="Inkbean - 你的 Claude Code 代理在打理像素菜园">
+<meta property="og:description" content="每个代理在做什么、是否卡住、做了什么。只读，不联网。">
+<meta property="og:image" content="https://yannisyoung.github.io/inkbean/assets/cover_1280x720.png">
+<meta property="og:url" content="https://yannisyoung.github.io/inkbean/zh-cn/">
+<link rel="canonical" href="https://yannisyoung.github.io/inkbean/zh-cn/">
+<link rel="alternate" hreflang="en" href="https://yannisyoung.github.io/inkbean/">
+<link rel="alternate" hreflang="ja" href="https://yannisyoung.github.io/inkbean/ja/">
+<link rel="alternate" hreflang="es" href="https://yannisyoung.github.io/inkbean/es/">
+<link rel="alternate" hreflang="ko" href="https://yannisyoung.github.io/inkbean/ko/">
+<link rel="alternate" hreflang="zh-Hans" href="https://yannisyoung.github.io/inkbean/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://yannisyoung.github.io/inkbean/zh-tw/">
+<link rel="alternate" hreflang="de" href="https://yannisyoung.github.io/inkbean/de/">
+<link rel="alternate" hreflang="fr" href="https://yannisyoung.github.io/inkbean/fr/">
+<link rel="alternate" hreflang="pt-BR" href="https://yannisyoung.github.io/inkbean/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://yannisyoung.github.io/inkbean/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Inkbean", "applicationCategory": "DeveloperApplication", "operatingSystem": "macOS", "inLanguage": "zh-Hans", "description": "一款把主代理和每个子代理显示为像素菜园中豆子的 Claude Code 插件。", "url": "https://yannisyoung.github.io/inkbean/zh-cn/", "image": "https://yannisyoung.github.io/inkbean/assets/cover_1280x720.png", "offers": {"@type": "Offer", "price": "7.00", "priceCurrency": "USD", "url": "https://yannisyoung.gumroad.com/l/sztoul", "availability": "https://schema.org/InStock"}, "author": {"@type": "Person", "name": "Yannis Young"}}</script>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><details class="langs"><summary class="lang sign">简体中文</summary><ul><li><a href="../" hreflang="en" lang="en">English</a></li><li><a href="../ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="../zh-cn/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a></li><li><a href="../zh-tw/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a></li></ul></details></header>
+
+  <main>
+    <div class="hero">
+      <div class="stand">
+      <div class="board sign">
+        <h1>你的代理，在菜园里干活。</h1>
+        <p>Claude Code 插件 Inkbean</p>
+      </div>
+        <span class="posts" aria-hidden="true"></span>
+      </div>
+
+      <div class="plot">
+        <picture>
+          <source srcset="../assets/cover_1280x720.png" media="(prefers-reduced-motion: reduce)">
+          <img src="../assets/demo.gif" width="576" height="324" alt="两个 Claude Code 会话化身为戴草帽的豆子。子代理从种子里发芽，在地里干活，完成后庄稼开花。">
+        </picture>
+      </div>
+      <p class="caption">在运行两个 Claude Code 会话时录制的真实窗口。四个片段，均为实际速度。</p>
+    </div>
+
+    <div class="buy">
+      <a href="https://yannisyoung.gumroad.com/l/sztoul">购买 Inkbean，7 美元</a>
+      <small>在 Gumroad 一次性购买，更新免费。</small>
+    </div>
+  </main>
+</div>
+
+<div class="soil">
+  <div class="wrap rows">
+    <div class="sign">
+      <h3>谁在做什么</h3>
+      <p>每颗豆子都拿着对应的工具：读文件拿书，写文件拿水壶，运行命令拿锄头。干活时庄稼会慢慢长大。</p>
+    </div>
+    <div class="sign">
+      <h3>全部完成时通知一次</h3>
+      <p>整批任务完成后，只发一条包含数量和用时的桌面通知，不会每个代理都提醒。</p>
+    </div>
+    <div class="sign">
+      <h3>发现卡住的代理</h3>
+      <p>当某个代理 5 分钟没有动静、连续 6 次重复同一个调用，或与其他代理编辑同一个文件时，提醒你一次。</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="notes">
+    <h2>主代理也在菜园里</h2>
+    <p>戴草帽的豆子就是正在和你对话的代理，每个会话一个。在 Claude Code 开始思考之前，它在树荫下打盹；思考时拔草；每调用一次工具，就收一棵菜放上推车。点击任意豆子，可以查看它读过和编辑过的文件、运行的命令、错误、token 数、用时以及使用的模型。</p>
+
+    <h2>只读与隐私</h2>
+    <ul>
+      <li>它从不阻止或修改任何工具调用或代理，只是旁观。</li>
+      <li>不联网。菜园页面禁止一切网络访问，插件也不发出任何网络请求。</li>
+      <li>只写入一个文件夹，从不保存提示词、回答、命令或文件内容。</li>
+      <li>附带可读的源代码和 138 个自动化测试。</li>
+    </ul>
+
+    <h2>购买前须知</h2>
+    <ul>
+      <li>需要 Claude Code 2.1.302 或更高版本，以及较新的浏览器。</li>
+      <li>已在 macOS 的 Chrome 和 Safari 上测试（2026 年 10 月）。尚未在 Windows 和 Linux 上测试。</li>
+      <li>菜园窗口和 README 为英文。</li>
+      <li>它使用 Claude Code 的插件钩子（抢先体验功能），Claude Code 更新后可能影响其运行。若出现这种情况，我会着手修复。</li>
+      <li>销售页面（Gumroad）为英文，价格以美元计。</li>
+    </ul>
+  </section>
+
+  <aside class="ad-slot" hidden aria-label="广告"></aside>
+
+  <div class="buy">
+    <a href="https://yannisyoung.gumroad.com/l/sztoul">购买 Inkbean，7 美元</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>非官方插件。与 Anthropic 无关，也未获其认可。"Claude" 和 "Claude Code" 是 Anthropic, PBC 的商标，此处仅用于说明适用的软件。</p>
+    <p>销售者：Yannis Young，通过 Gumroad 销售。卖家信息、退款和支持请见<a href="https://yannisyoung.gumroad.com/l/sztoul">商品页面</a>。联系方式：yannisyoung0987@gmail.com</p>
+    <p><a href="../privacy.html" hreflang="en">隐私政策（英文）</a></p>
+  </div>
+</footer>
+</body>
+</html>
