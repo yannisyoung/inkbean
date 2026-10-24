@@ -1,0 +1,104 @@
+/* Inkbean site: the page is the garden. Colours are the garden's own (viewer/scenes/garden/scene.js). */
+:root {
+  --grass: #6eb056;
+  --grass-dark: #5d9e48;
+  --wood: #8a5e3e;
+  --wood-edge: #5a3a26;
+  --chalk: #fbfaf6;
+  --path: #c9a874;
+  --path-dark: #b4925e;
+  --sun: #f6d05a;
+  --ink: #1e2a16;
+  --sign-font: "DotGothic16", ui-monospace, monospace;
+}
+/* DotGothic16 (SIL Open Font License, assets/OFL.txt), cut down to the letters these pages use, served from this site. */
+@font-face { font-family: "DotGothic16"; src: url("assets/dotgothic16-subset.woff2") format("woff2"); font-display: swap; }
+* { box-sizing: border-box; }
+html { background: var(--grass); }
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 17px/1.7 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background: var(--grass);
+}
+a { color: inherit; }
+:focus-visible { outline: 4px solid var(--sun); outline-offset: 3px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+/* A wooden sign: square pixel corners, a darker rim, chalk-white letters. */
+.sign {
+  background: var(--wood);
+  color: var(--chalk);
+  border: 4px solid var(--wood-edge);
+  clip-path: polygon(4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px), 0 4px, 4px 4px);
+  padding: 14px 20px;
+}
+.sign h2, .sign h3, .hero h1 { font-family: var(--sign-font); font-weight: 400; margin: 0 0 6px; line-height: 1.35; }
+
+header.top { display: flex; justify-content: flex-end; padding: 14px 0 0; }
+.lang { font-family: var(--sign-font); font-size: 15px; padding: 4px 12px; text-decoration: none; }
+
+.hero { text-align: center; padding: 28px 0 0; }
+.hero .stand { display: inline-block; position: relative; padding-bottom: 40px; margin-bottom: 0; }
+.hero .board { display: block; }
+.hero h1, .notes h1 { word-break: keep-all; overflow-wrap: anywhere; }
+.hero h1 { font-size: clamp(28px, 6vw, 44px); margin: 0; }
+.hero .board p { margin: 6px 0 0; font-size: 16px; }
+/* The sign's two posts, standing in the grass. */
+.hero .posts { position: absolute; left: 0; right: 0; bottom: 0; height: 40px; pointer-events: none; }
+.hero .posts::before, .hero .posts::after { content: ""; position: absolute; top: 0; width: 12px; height: 40px; background: var(--wood-edge); }
+.hero .posts::before { left: 22%; }
+.hero .posts::after { right: 22%; }
+
+.plot {
+  background: var(--wood-edge);
+  padding: 8px;
+  margin: 0 auto;
+  max-width: 592px;
+}
+.plot img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.caption { text-align: center; font-size: 14px; margin: 10px 0 0; }
+
+.buy { text-align: center; margin: 28px 0 8px; }
+.buy a {
+  display: inline-block;
+  font-family: var(--sign-font);
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--sun);
+  border: 4px solid var(--wood-edge);
+  padding: 10px 28px;
+}
+.buy a:hover { background: #ffe27a; }
+.buy small { display: block; margin-top: 8px; font-size: 14px; }
+
+/* A strip of tilled soil for the three things it does. */
+.soil { background: var(--wood); margin-top: 44px; padding: 36px 0; border-top: 8px solid var(--wood-edge); border-bottom: 8px solid var(--wood-edge); }
+.soil .rows { display: grid; gap: 18px; }
+.soil .sign { background: #9b6c49; }
+.soil p { margin: 0; }
+
+section.notes { padding: 36px 0 8px; }
+section.notes h2 { font-family: var(--sign-font); font-weight: 400; font-size: 24px; margin: 0 0 8px; }
+section.notes h1.sign { display: inline-block; font-family: var(--sign-font); font-weight: 400; font-size: clamp(24px, 6vw, 32px); margin: 8px 0 12px; }
+section.notes ul { margin: 0 0 22px; padding-left: 1.2em; }
+section.notes li { margin: 4px 0; }
+
+/* Ad space, off until the site is approved. It keeps its place so nothing jumps when it is switched on. */
+.ad-slot[hidden] { display: none; }
+.ad-slot { margin: 28px auto; max-width: 728px; min-height: 90px; }
+
+/* The path along the bottom of the garden. */
+footer {
+  background: var(--path);
+  border-top: 8px solid var(--path-dark);
+  margin-top: 40px;
+  padding: 22px 0 30px;
+  font-size: 14px;
+}
+footer p { margin: 4px 0; }
+
+@media (min-width: 680px) {
+  .soil .rows { grid-template-columns: 1fr 1fr 1fr; }
+}

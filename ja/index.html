@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkbean - Claude Code のエージェントが畑で働く</title>
+<meta name="description" content="Claude Code のプラグイン。メインエージェントとサブエージェントが、ターミナルの横のドット絵の畑で豆になって働きます。誰が何をしているか、止まっていないか、何をしたかが分かります。">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="ja" href="./">
+<meta property="og:title" content="Inkbean - Claude Code のエージェントが畑で働く">
+<meta property="og:description" content="誰が何をしているか、止まっていないか、何をしたか。読み取り専用・通信なし。">
+<meta property="og:image" content="https://yannisyoung.github.io/inkbean/assets/cover_1280x720.png">
+<meta property="og:url" content="https://yannisyoung.github.io/inkbean/ja/">
+<link rel="canonical" href="https://yannisyoung.github.io/inkbean/ja/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><a class="lang sign" href="../" hreflang="en" lang="en">English</a></header>
+
+  <main>
+    <div class="hero">
+      <div class="stand">
+      <div class="board sign">
+        <h1>エージェントが、<wbr>畑で働く。</h1>
+        <p>Claude Code のプラグイン「Inkbean」</p>
+      </div>
+        <span class="posts" aria-hidden="true"></span>
+      </div>
+
+      <div class="plot">
+        <picture>
+          <source srcset="../assets/cover_1280x720.png" media="(prefers-reduced-motion: reduce)">
+          <img src="../assets/demo.gif" width="576" height="324" alt="麦わら帽子の豆が2つの Claude Code セッション。サブエージェントは種から芽を出して畑で働き、終わると作物が花を咲かせる。">
+        </picture>
+      </div>
+      <p class="caption">2つの Claude Code セッションを動かしている間の、実際の画面の録画です。4つの場面を実際の速さでつないでいます。</p>
+    </div>
+
+    <div class="buy">
+      <a href="https://yannisyoung.gumroad.com/l/sztoul">Inkbean を買う（$7）</a>
+      <small>Gumroad での買い切り。アップデートは無料です。</small>
+    </div>
+  </main>
+</div>
+
+<div class="soil">
+  <div class="wrap rows">
+    <div class="sign">
+      <h3>誰が何をしているか</h3>
+      <p>豆はそれぞれ仕事の道具を持っています。読むときは本、書くときはじょうろ、コマンドはクワ。働いている間に作物が育ちます。</p>
+    </div>
+    <div class="sign">
+      <h3>終わったら1回だけ通知</h3>
+      <p>全員の作業が終わったら、件数と時間だけのデスクトップ通知を1回。エージェントごとには鳴りません。</p>
+    </div>
+    <div class="sign">
+      <h3>止まっていたら知らせる</h3>
+      <p>5分間動きがない、同じ呼び出しを6回くり返す、ほかのエージェントと同じファイルを編集する。そんなときに一度だけ知らせます。</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="notes">
+    <h2>メインエージェントも畑に</h2>
+    <p>麦わら帽子の豆は、あなたが話しているエージェントです。セッションごとに1体います。Claude Code が考え始めるまでは木陰で昼寝をして、考えている間は草むしり、道具を1回使うたびに野菜を1本収穫して荷車に積みます。豆をクリックすると、読んだファイル・編集したファイル・実行したコマンド・エラー・トークン・時間・モデル名が分かります。</p>
+
+    <h2>読み取り専用・プライバシー</h2>
+    <ul>
+      <li>ツールの呼び出しやエージェントを止めたり変えたりしません。見ているだけです。</li>
+      <li>通信しません。畑のページはすべての通信を禁止していて、プラグインも Web にアクセスしません。</li>
+      <li>書き込むのは1つのフォルダだけです。プロンプト・回答・コマンド・ファイルの中身は保存しません。</li>
+      <li>ソースは読める形で入っていて、自動テストが138件あります。</li>
+    </ul>
+
+    <h2>買う前に</h2>
+    <ul>
+      <li>Claude Code 2.1.302 以降と、最近のブラウザが必要です。</li>
+      <li>動作を確かめたのは macOS の Chrome と Safari です（2026年10月）。Windows と Linux はまだ試していません。</li>
+      <li>畑の画面と説明書（README）は英語です。</li>
+      <li>Claude Code のプラグインのフック（先行提供の機能）を使っています。Claude Code の更新で動かなくなった場合は、修正に取り組みます。</li>
+      <li>販売ページ（Gumroad）は英語です。価格はドル建てで、支払いのときに円で表示されることがあります。</li>
+    </ul>
+  </section>
+
+  <aside class="ad-slot" hidden aria-label="広告"></aside>
+
+  <div class="buy">
+    <a href="https://yannisyoung.gumroad.com/l/sztoul">Inkbean を買う（$7）</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>非公式のプラグインです。Anthropic とは関係がなく、承認も受けていません。「Claude」「Claude Code」は Anthropic, PBC の商標で、対応するソフトを示すためだけに使っています。</p>
+    <p>販売者: Yannis Young（屋号）。販売は Gumroad が行います。特定商取引法に基づく表記（販売者情報・返品・支払い・引き渡し）は<a href="https://yannisyoung.gumroad.com/l/sztoul">商品ページ</a>の「Seller information」にあります。氏名・住所・電話番号は、下記にご請求いただければ遅滞なくお知らせします。連絡先: 0987onay@gmail.com</p>
+    <p><a href="privacy.html">プライバシーポリシー</a></p>
+  </div>
+</footer>
+</body>
+</html>

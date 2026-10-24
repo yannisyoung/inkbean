@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkbean - your Claude Code agents, tending a pixel garden</title>
+<meta name="description" content="A plugin for Claude Code. Your main agent and every subagent are beans in a pixel garden window next to your terminal: what each is doing, when one looks stuck, what it did.">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="ja" href="ja/">
+<meta property="og:title" content="Inkbean - your Claude Code agents, tending a pixel garden">
+<meta property="og:description" content="See what each agent is doing, when one looks stuck, and what it did. Read-only, no network.">
+<meta property="og:image" content="https://yannisyoung.github.io/inkbean/assets/cover_1280x720.png">
+<meta property="og:url" content="https://yannisyoung.github.io/inkbean/">
+<link rel="canonical" href="https://yannisyoung.github.io/inkbean/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><a class="lang sign" href="ja/" hreflang="ja" lang="ja">日本語</a></header>
+
+  <main>
+    <div class="hero">
+      <div class="stand">
+      <div class="board sign">
+        <h1>Your agents, tending a garden.</h1>
+        <p>Inkbean, a plugin for Claude Code</p>
+      </div>
+        <span class="posts" aria-hidden="true"></span>
+      </div>
+
+      <div class="plot">
+        <picture>
+          <source srcset="assets/cover_1280x720.png" media="(prefers-reduced-motion: reduce)">
+          <img src="assets/demo.gif" width="576" height="324" alt="Two Claude Code sessions as beans in straw hats. Subagents sprout from seeds, work their plots, and their crops bloom when they finish.">
+        </picture>
+      </div>
+      <p class="caption">Recorded from the real window while two Claude Code sessions ran. Four moments, each at real speed.</p>
+    </div>
+
+    <div class="buy">
+      <a href="https://yannisyoung.gumroad.com/l/sztoul">Get Inkbean, $7</a>
+      <small>One-time purchase on Gumroad. Updates are free.</small>
+    </div>
+  </main>
+</div>
+
+<div class="soil">
+  <div class="wrap rows">
+    <div class="sign">
+      <h3>See who is doing what</h3>
+      <p>Each bean holds the tool for the job: a book to read, a watering can to write, a hoe to run a command. Its crops come up while it works.</p>
+    </div>
+    <div class="sign">
+      <h3>Hear when they are done</h3>
+      <p>One desktop notification when the whole batch finishes, with counts and time. Not one per agent.</p>
+    </div>
+    <div class="sign">
+      <h3>Catch a stuck one</h3>
+      <p>A heads-up when an agent goes quiet for 5 minutes, repeats the same call 6 times, or edits a file another agent is editing.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="notes">
+    <h2>Your main agent too</h2>
+    <p>The bean in the straw hat is the agent you talk to, one per running session. It naps under the tree until Claude Code starts thinking, pulls weeds while it thinks, and picks a vegetable for the cart with every tool call. Click any bean for its receipt: files read and edited, commands run, errors, tokens, time, and which model it is.</p>
+
+    <h2>Read-only and private</h2>
+    <ul>
+      <li>It never blocks or changes a tool call or an agent. It only watches.</li>
+      <li>No network. The garden page forbids all network access, and the plugin makes no web requests.</li>
+      <li>It writes in one folder only, and never saves prompts, answers, commands or file contents.</li>
+      <li>The source ships readable, with 138 automated tests.</li>
+    </ul>
+
+    <h2>Before you buy</h2>
+    <ul>
+      <li>Requires Claude Code 2.1.302 or later and a current web browser.</li>
+      <li>Tested on macOS with Chrome and Safari (October 2026). Not yet tested on Windows or Linux.</li>
+      <li>The garden window is in English.</li>
+      <li>It uses Claude Code's plugin hooks, which are marked early access, so a Claude Code update may change how it works. If that happens I will work on a fix.</li>
+    </ul>
+  </section>
+
+  <aside class="ad-slot" hidden aria-label="Advertisement"></aside>
+
+  <div class="buy">
+    <a href="https://yannisyoung.gumroad.com/l/sztoul">Get Inkbean, $7</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Unofficial. Not affiliated with or endorsed by Anthropic. "Claude" and "Claude Code" are trademarks of Anthropic, PBC, named here only to say what this works with.</p>
+    <p>Sold by Yannis Young through Gumroad. Seller details, refunds and support are on the <a href="https://yannisyoung.gumroad.com/l/sztoul">product page</a>. Contact: 0987onay@gmail.com</p>
+    <p><a href="privacy.html">Privacy</a></p>
+  </div>
+</footer>
+</body>
+</html>
